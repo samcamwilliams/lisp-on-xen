@@ -1,0 +1,15 @@
+--- console.c
++++ console.c
+@@ -141,10 +141,10 @@
+ 
+ void printk(const char *fmt, ...)
+ {
+-    va_list       args;
++/*  va_list       args;
+     va_start(args, fmt);
+     print(0, fmt, args);
+-    va_end(args);        
++    va_end(args);*/
+ }
+ 
+ void xprintk(const char *fmt, ...)
